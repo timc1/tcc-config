@@ -1,4 +1,4 @@
-source ../.secrets
+source ~/.secrets
 export PATH=/bin:/sbin:/usr/local/sbin:/usr/bin:/usr/local/bin:$PATH:/usr/local/mysql/bin
 
 # Sets colors for Terminal
