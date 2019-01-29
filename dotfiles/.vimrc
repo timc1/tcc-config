@@ -63,10 +63,17 @@ let g:airline_skip_empty_sections=1
 set tw=100
 set formatoptions+=t
 
-" better searches
-set ignorecase   " ignores case in searches
-set incsearch    " begins searching after typing
-set hlsearch     " highlight all matching searches
+" ignores case in searches
+set ignorecase   
+
+" highlight all matching searches
+set incsearch    
+
+" begins searching after typing
+set hlsearch     
+
+" ctrl + l to remove current search
+noremap <C-l> :noh<CR>
 
 " show commands that have been typed
 set showcmd
@@ -128,6 +135,8 @@ set backupcopy=yes
 ca tn tabnew
 ca th tabprevious
 ca tl tabnext
+" Open new tab in explorer mode and location of current 'head' 
+ca te tabe %:h
 
 " insert HTML template in new HTML files
 :autocmd BufNewFile *.html 0r ~/.vim/templates/html.tpl
