@@ -26,6 +26,9 @@ Plugin 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue']
   \ }
 
+" code completion
+Plugin 'Valloric/YouCompleteMe'
+
 " asynchronous linting
 Plugin 'w0rp/ale'
 
@@ -137,6 +140,7 @@ ca th tabprevious
 ca tl tabnext
 " Open new tab in explorer mode and location of current 'head' 
 ca te tabe %:h
+ca tE Texplore
 
 " insert HTML template in new HTML files
 :autocmd BufNewFile *.html 0r ~/.vim/templates/html.tpl
