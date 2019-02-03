@@ -35,6 +35,9 @@ Plugin 'w0rp/ale'
 " ~lean & mean status/tabline~ 😼
 Plugin 'vim-airline/vim-airline'
 
+" reformats indentation when we move lines up and down
+Plugin 'tpope/vim-unimpaired'
+
 " all plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -61,6 +64,11 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline_skip_empty_sections=1
+
+" YouCompleteMe
+" close preview after insertion mode
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " wrap text
 set tw=100
@@ -110,6 +118,13 @@ set guioptions=
 command! W :w
 command! Q :q
 
+" move single lines up and down
+nmap <C-k> [e
+nmap <C-j> ]e
+" move multiple lines up and down
+vmap <C-k> [egv
+vmap <C-j> ]egv
+
 " Open files in browser
 nnoremap <F12>f :exe ':silent !open -a /Applications/Firefox.app %'<CR>
 nnoremap <F12>c :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
@@ -144,3 +159,6 @@ ca tE Texplore
 
 " insert HTML template in new HTML files
 :autocmd BufNewFile *.html 0r ~/.vim/templates/html.tpl
+
+" insert React Typescript template into new .tsx files
+:autocmd BufNewFile *.tsx 0r ~/.vim/templates/tsx.tpl

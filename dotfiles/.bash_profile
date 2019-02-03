@@ -61,7 +61,7 @@ function killport (){
 }
 
 # cd path alterations
-CDPATH=.:$HOME:$HOME/Desktop:$HOME/Desktop/projects
+CDPATH=.:$HOME:$HOME/Desktop:$HOME/Desktop/projects:$HOME/Desktop/consulting
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
