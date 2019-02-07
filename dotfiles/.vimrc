@@ -9,9 +9,6 @@ call vundle#begin()
 " Vundle manages Vundle 😀
 Plugin 'VundleVim/Vundle.vim'
 
-" solarized color theme
-Plugin 'altercation/vim-colors-solarized'
-
 " improved folder structure
 Plugin 'tpope/vim-vinegar'
 
@@ -47,10 +44,14 @@ set number
 " set relative line numbers
 set rnu
 
-" solarized theme 
+" theme 
+if (has("termguicolors"))
+ set termguicolors
+endif
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme solarized 
+set guifont=Input:h11
 
 " tabs
 set tabstop=2

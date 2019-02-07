@@ -28,8 +28,7 @@ ssh-add
 
 alias mvim='open -a MacVim'
 alias vi="mvim -v"
-alias vim="mvim -v"
-alias v="vim"
+alias v="vi"
 alias python="python3.7"
 alias ss="python -m http.server 8888"
 alias checkport='netstat -vanp tcp | grep'
