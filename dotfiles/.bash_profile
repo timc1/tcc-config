@@ -47,6 +47,7 @@ alias ga="git add ."
 alias gc="git commit -m"
 #yarn aliases
 alias ya="yarn add"
+alias yr="yarn remove"
 alias ys="yarn start"
 alias yb="yarn build"
 alias yd="yarn deploy"
