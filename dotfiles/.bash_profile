@@ -27,8 +27,9 @@ eval "$(ssh-agent -s)"
 ssh-add
 
 alias mvim='open -a MacVim'
+alias vim="mvim -v"
 alias vi="mvim -v"
-alias v="vi"
+alias v="mvim -v"
 alias python="python3.7"
 alias ss="python -m http.server 8888"
 alias checkport='netstat -vanp tcp | grep'
@@ -47,6 +48,7 @@ alias ga="git add ."
 alias gc="git commit -m"
 #yarn aliases
 alias ya="yarn add"
+alias yad="yarn add --dev"
 alias yr="yarn remove"
 alias ys="yarn start"
 alias yb="yarn build"

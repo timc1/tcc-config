@@ -20,7 +20,7 @@ Plugin 'findango/vim-mdx'
 
 " prettier code formatting
 Plugin 'prettier/vim-prettier', {
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue']
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'html']
   \ }
 
 " code completion
