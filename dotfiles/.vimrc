@@ -163,3 +163,6 @@ ca tE Texplore
 
 " insert React Typescript template into new .tsx files
 :autocmd BufNewFile *.tsx 0r ~/.vim/templates/tsx.tpl
+
+" Makes cursor line color white - though this is saved in our custom solarized.vim color palette
+"hi CursorLineNr guifg=white
