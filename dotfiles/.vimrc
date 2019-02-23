@@ -99,7 +99,7 @@ set showcmd
 " don’t reset cursor to start of line when moving around
 set nostartofline
 
-" keep the cursor line near the middle of the screen
+" when toggling between (H)igh, (M)id, (L)ow, keep the cursor line 3 lines from the original target 
 set scrolloff=3
 
 " disable cursorline in insert mode
@@ -132,35 +132,35 @@ nmap <C-j> ]e
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
-" Open files in browser
+" open files in browser
 nnoremap <F12>f :exe ':silent !open -a /Applications/Firefox.app %'<CR>
 nnoremap <F12>c :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
 nnoremap <F12>g :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
 nnoremap <F12>s :exe ':silent !open /Applications/Safari.app %'<CR>
 
-" Run prettier on save
+" run prettier on save
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.mdx,*.vue,*.yaml,*.html PrettierAsync 
 
-" Allow .jsx syntax to be used on .js files
+" allow .jsx syntax to be used on .js files
 let g:jsx_ext_required = 0
 
-" Disable automatic comment insertion 
+" disable automatic comment insertion 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Enable yanking to the clipboard
+" enable yanking to the clipboard
 set clipboard=unnamed
 
-" Disable 'safe write' feature that can potentially interfere with recompilation.
+" disable 'safe write' feature that can potentially interfere with recompilation.
 " Reference: https://webpack.js.org/guides/development/#adjusting-your-text-editor
 set backupcopy=yes
 
-" Open new tab shortcuts
+" open new tab shortcuts
 ca tn tabnew
 ca th tabprevious
 ca tl tabnext
-" Open new tab in explorer mode and location of current 'head' 
+" open new tab in explorer mode and location of current 'head' 
 ca te tabe %:h
 ca tE Texplore
 
@@ -170,7 +170,7 @@ ca tE Texplore
 " insert React Typescript template into new .tsx files
 :autocmd BufNewFile *.tsx 0r ~/.vim/templates/tsx.tpl
 
-" Makes cursor line color white - though this is saved in our custom solarized.vim color palette
+" makes cursor line color white - though this is saved in our custom solarized.vim color palette
 "hi CursorLineNr guifg=white
 
 
