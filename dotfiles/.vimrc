@@ -70,6 +70,12 @@ let g:airline_skip_empty_sections=1
 " close preview after insertion mode
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+" remove YouCompleteMe's linter because we're using ALE 
+let g:ycm_show_diagnostics_ui = 0
+
+" vim-ale change error and warning symbols
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
 
 " wrap text
 set tw=100
@@ -166,3 +172,5 @@ ca tE Texplore
 
 " Makes cursor line color white - though this is saved in our custom solarized.vim color palette
 "hi CursorLineNr guifg=white
+
+
