@@ -55,6 +55,7 @@ alias yb="yarn build"
 alias yd="yarn deploy"
 alias yt="yarn test"
 alias ytw="yarn test --watch"
+alias yrd="yarn run dev"
 
 # Custom functions
 function killport (){

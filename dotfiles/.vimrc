@@ -66,6 +66,9 @@ let g:airline_powerline_fonts=1
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline_skip_empty_sections=1
 
+" netrw hide mac files
+let g:netrw_list_hide='.*\.swp$,\.DS_Store'
+
 " YouCompleteMe
 " close preview after insertion mode
 let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -74,8 +77,10 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_show_diagnostics_ui = 0
 
 " vim-ale change error and warning symbols
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
+let g:ale_sign_error = "◉"
+let g:ale_sign_warning = "◉"
+highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#C30500
+highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#ED6237
 
 " wrap text
 set tw=100

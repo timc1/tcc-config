@@ -312,7 +312,7 @@ if (has("gui_running") && g:solarized_degrade == 0)
     let s:violet      = "#6c71c4"
     let s:blue        = "#89AFE3"
     let s:cyan        = "#7FC8BD"
-    let s:green       = "#A4BB62"
+    let s:green       = "#99C444"
 elseif (has("gui_running") && g:solarized_degrade == 1)
     " These colors are identical to the 256 color mode. They may be viewed
     " while in gui mode via "let g:solarized_degrade=1", though this is not
