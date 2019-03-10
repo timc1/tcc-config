@@ -63,6 +63,12 @@ function killport (){
   lsof -i tcp:"$1" -t 2>/dev/null >/dev/null || printf "killed processes on port %s\n" "$1"
 }
 
+# Restart Mac Touchbar -_-
+function restartTouchbar() {
+  pkill "Touch Bar agent";
+  killall "ControlStrip";
+}
+
 # cd path alterations
 CDPATH=.:$HOME:$HOME/Desktop:$HOME/Desktop/projects:$HOME/Desktop/consulting
 
