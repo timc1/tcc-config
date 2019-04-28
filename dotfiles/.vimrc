@@ -82,7 +82,7 @@ let g:ycm_show_diagnostics_ui = 0
 let g:ale_sign_error = "◉"
 let g:ale_sign_warning = "◉"
 highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#C30500
-highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#ED6237
+highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#FED67D
 
 " wrap text
 set tw=100
