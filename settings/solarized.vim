@@ -297,8 +297,8 @@ let colors_name = "solarized"
 if (has("gui_running") && g:solarized_degrade == 0)
     " Tim tweaked colors to improve contrast
     let s:vmode       = "gui"
-    let s:base03      = "#002b36"
-    let s:base02      = "#073642"
+    let s:base03      = "#102B36"
+    let s:base02      = "#18343F"
     let s:base01      = "#586e75"
     let s:base00      = "#657b83"
     let s:base0       = "#A9B6BC"
@@ -312,7 +312,7 @@ if (has("gui_running") && g:solarized_degrade == 0)
     let s:violet      = "#6c71c4"
     let s:blue        = "#89AFE3"
     let s:cyan        = "#7FC8BD"
-    let s:green       = "#99C444"
+    let s:green       = "#B0BD60"
 elseif (has("gui_running") && g:solarized_degrade == 1)
     " These colors are identical to the 256 color mode. They may be viewed
     " while in gui mode via "let g:solarized_degrade=1", though this is not

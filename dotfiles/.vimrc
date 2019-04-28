@@ -35,6 +35,9 @@ Plugin 'vim-airline/vim-airline'
 " reformats indentation when we move lines up and down
 Plugin 'tpope/vim-unimpaired'
 
+" comments
+Plugin 'tpope/vim-commentary'
+
 " all plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,11 +47,8 @@ set number
 " set relative line numbers
 set rnu
 
-" theme 
-if (has("termguicolors"))
- set termguicolors
-endif
 syntax enable
+let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized 
 set guifont=Input:h11
@@ -68,6 +68,8 @@ let g:airline_skip_empty_sections=1
 
 " netrw hide mac files
 let g:netrw_list_hide='.*\.swp$,\.DS_Store'
+let g:netrw_banner=0
+let g:netrw_liststyle=3
 
 " YouCompleteMe
 " close preview after insertion mode
@@ -126,6 +128,9 @@ set belloff=all
 " remove all scrollbars
 set guioptions=
 
+" no .swp files
+set noswapfile
+
 " remap capital w and q to lowercase
 command! W :w
 command! Q :q
@@ -169,6 +174,9 @@ ca tl tabnext
 ca te tabe %:h
 ca tE Texplore
 
+" copy error message to clipboard
+ca err let @+ = v:statusmsg
+
 " insert HTML template in new HTML files
 :autocmd BufNewFile *.html 0r ~/.vim/templates/html.tpl
 
@@ -177,5 +185,3 @@ ca tE Texplore
 
 " makes cursor line color white - though this is saved in our custom solarized.vim color palette
 "hi CursorLineNr guifg=white
-
-
