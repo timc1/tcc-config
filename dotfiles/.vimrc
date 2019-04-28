@@ -171,7 +171,7 @@ ca tn tabnew
 ca th tabprevious
 ca tl tabnext
 " open new tab in explorer mode and location of current 'head' 
-ca te tabe %:h
+ca te tabnew .
 ca tE Texplore
 
 " copy error message to clipboard
