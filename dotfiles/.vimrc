@@ -69,7 +69,6 @@ let g:airline_skip_empty_sections=1
 " netrw hide mac files
 let g:netrw_list_hide='.*\.swp$,\.DS_Store'
 let g:netrw_banner=0
-let g:netrw_liststyle=3
 
 " YouCompleteMe
 " close preview after insertion mode
@@ -166,12 +165,8 @@ set clipboard=unnamed
 " Reference: https://webpack.js.org/guides/development/#adjusting-your-text-editor
 set backupcopy=yes
 
-" open new tab shortcuts
-ca tn tabnew
-ca th tabprevious
-ca tl tabnext
 " open new tab in explorer mode and location of current 'head' 
-ca te tabnew .
+ca te tabnew ./
 ca tE Texplore
 
 " copy error message to clipboard
