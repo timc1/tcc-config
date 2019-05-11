@@ -166,7 +166,7 @@ set clipboard=unnamed
 set backupcopy=yes
 
 " open new tab in explorer mode and location of current 'head' 
-ca te tabnew ./
+ca te Texplore 
 ca tE Texplore
 
 " copy error message to clipboard
