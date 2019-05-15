@@ -47,6 +47,9 @@ set number
 " set relative line numbers
 set rnu
 
+" always show sign columns to avoid jumpiness
+set signcolumn=yes
+
 syntax enable
 let g:solarized_termtrans=1
 set background=dark
@@ -141,12 +144,6 @@ nmap <C-j> ]e
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
-" open files in browser
-nnoremap <F12>f :exe ':silent !open -a /Applications/Firefox.app %'<CR>
-nnoremap <F12>c :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
-nnoremap <F12>g :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
-nnoremap <F12>s :exe ':silent !open /Applications/Safari.app %'<CR>
-
 " run prettier on save
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
@@ -172,11 +169,3 @@ ca tE Texplore
 " copy error message to clipboard
 ca err let @+ = v:statusmsg
 
-" insert HTML template in new HTML files
-:autocmd BufNewFile *.html 0r ~/.vim/templates/html.tpl
-
-" insert React Typescript template into new .tsx files
-:autocmd BufNewFile *.tsx 0r ~/.vim/templates/tsx.tpl
-
-" makes cursor line color white - though this is saved in our custom solarized.vim color palette
-"hi CursorLineNr guifg=white
