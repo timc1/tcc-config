@@ -49,6 +49,7 @@ alias gpush="git push"
 alias gd="git diff"
 alias ga="git add ."
 alias gc="git commit -m"
+alias gb="git branches"
 #yarn aliases
 alias ya="yarn add"
 alias yad="yarn add --dev"
