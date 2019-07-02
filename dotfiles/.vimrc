@@ -54,7 +54,7 @@ syntax enable
 let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized 
-set guifont=Input:h11
+set guifont=Input\ Mono:h11
 
 " tabs
 set tabstop=2
@@ -77,7 +77,7 @@ let g:netrw_banner=0
 " close preview after insertion mode
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-" remove YouCompleteMe's linter because we're using ALE 
+" remove YCM's linter because we're using ALE 
 let g:ycm_show_diagnostics_ui = 0
 
 " vim-ale change error and warning symbols
