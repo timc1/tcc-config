@@ -7,7 +7,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # fuzzy find (fzf) using fd
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git --exclude .bash_sessions --exclude .npm --exclude .node-gyp --exclude .vim --exclude node_modules --exclude /Dropbox --exclude /Music --exclude /Movies --exclude /Library --exclude .dropbox --exclude /Applications'
 
 echo '''
     ________________________
