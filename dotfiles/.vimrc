@@ -38,6 +38,10 @@ Plugin 'tpope/vim-unimpaired'
 " comments
 Plugin 'tpope/vim-commentary'
 
+" fuzzy finder
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 " all plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,7 +84,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " remove YCM's linter because we're using ALE 
 let g:ycm_show_diagnostics_ui = 0
 
-" vim-ale change error and warning symbols
+" vim-ale 
+" change error and warning symbols
 let g:ale_sign_error = "◉"
 let g:ale_sign_warning = "◉"
 highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#C30500
@@ -168,4 +173,13 @@ ca tE Texplore
 
 " copy error message to clipboard
 ca err let @+ = v:statusmsg
+
+" fzf
+" map ctrl+p to :Files
+nnoremap <c-p> :Files<CR>
+
+" Abstract goodies
+runtime! env/*.vim
+map <leader>s :vsp %:h/style.scss<CR>
+map <leader>c :vsp %:h/connector.js<CR>
 
