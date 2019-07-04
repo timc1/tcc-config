@@ -96,13 +96,13 @@ set tw=100
 set formatoptions+=t
 
 " ignores case in searches
-set ignorecase   
+set ignorecase 
 
 " highlight all matching searches
-set incsearch    
+set incsearch
 
 " begins searching after typing
-set hlsearch     
+set hlsearch
 
 " ctrl + l to remove current search
 noremap <C-l> :noh<CR>
